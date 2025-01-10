@@ -1,0 +1,21 @@
+
+Types of css selectors
+
+1. universal selector *
+2. html tag selector 
+3. class selector (.)
+4. id selector (#)
+5. Group Selector (,)
+6. Compound Selector
+7. Combinators
+    a) Decendant selector (space)
+    b) Child selector (>)
+    c) General Sibling selector (~)
+    d) Adjacent Sibling selector (+)
+8.Attribute Selectors
+    a) [attr]
+    b) [attr=value]
+    c) [attr~=value]
+    d) [attr^=value]
+    e) [attr$=value]
+    f) [attr*=value]

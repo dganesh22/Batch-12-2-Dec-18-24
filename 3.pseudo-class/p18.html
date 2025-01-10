@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* user-valid works on type */
+        /* input:user-valid {
+            border: 2px solid green;
+            outline: none;
+        } */
+
+        /* valid works on value */
+        input:valid {
+            border: 2px solid green;
+            outline: none;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> :user-valid , :valid and :in-valid </h1>
+
+    <form action="">
+        <div>
+            <label for="">Your email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <hr>
+        <div>
+            <label for="">Your Password</label>
+            <input type="text" name="pass" id="pass" pattern="[a-zA-Z]+" required>
+        </div>
+    </form>
+</body>
+
+</html>

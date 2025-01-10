@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::before {
+            content: "Hi, My Name is ";
+            color: green;
+        }
+
+        h2::after {
+            content: " , I stay in banglore.";
+            color: orangered;
+        }
+
+        h2 {
+            color: slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>::before and ::after</h1>
+
+    <div>
+        <h2>John</h2>
+        <h2>Tom</h2>
+        <h2>Sam</h2>
+    </div>
+</body>
+
+</html>

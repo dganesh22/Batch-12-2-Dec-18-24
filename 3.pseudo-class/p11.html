@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            outline: none;
+        }
+
+        input:in-range {
+            background-color: green;
+            border: 4px solid green;
+        }
+
+        input:out-of-range {
+            background-color: orangered;
+            border: 4px solid orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:in-range and :out-of-range</h1>
+
+    <form action="">
+        <label for="">weight</label>
+        <input type="number" name="weight" id="weight" min="0" max="100" value="4">
+    </form>
+</body>
+
+</html>

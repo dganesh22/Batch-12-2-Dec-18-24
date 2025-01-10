@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [name] {
+            border: 15px dotted green;
+            border-radius: 50%;
+        }
+
+        [target] {
+            background-color: teal;
+            color: #fff;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attribute selectors [attr] </h1>
+    <!-- attributes => html properties -->
+    <!-- <element attribute="value"></element> -->
+    <!-- <tag attribute="value"></tag> -->
+
+    <img src="https://picsum.photos/400/400" alt="no image" name="image" width="300" height="300">
+    <img src="https://picsum.photos/400/400" alt="no image" name="image1" width="300" height="300">
+    <img src="https://picsum.photos/400/400" alt="no image" name="image2" width="300" height="300">
+
+    <hr>
+
+    <a href="#" target="_self">Home</a>
+    <a href="#" target="_blank">About</a> 
+    <a href="#" target="_parent">Product</a>
+    <a href="#" target="_top">Contact</a>
+</body>
+
+</html>

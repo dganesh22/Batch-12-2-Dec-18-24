@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container div {
+            width: 300px;
+            height: 100px;
+            margin: 40px;
+            /* border-color: orange; */
+            border-width: 1em;
+        }
+
+        .b1 {
+            border-block-start: solid;
+            border-block-end: dotted;
+            writing-mode: horizontal-tb;
+        }
+
+        .b2 {
+            border-block-start: inset;
+            border-block-start-color: red;
+            border-block-end: ridge;
+            border-block-end-color: slateblue;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-block</h1>
+
+    <section class="container">
+        <div class="b1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo dignissimos,
+        </div>
+        <div class="b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quidem, </div>
+        <div class="b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque </div>
+    </section>
+</body>
+
+</html>
