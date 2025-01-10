@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #can {
+            border: 2px solid #222;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Emoji using canvas</h1>
+
+    <canvas id="can" width="400" height="400"></canvas>
+
+    <script>
+        function drawCanvas() {
+            var canEl = document.getElementById("can")
+            var ctx = canEl.getContext("2d")
+
+            ctx.beginPath();
+            // arc(x,y,radius,startAngle,endAngle,boolean) true - clockwise , false - anti-clock
+
+            ctx.arc(75, 75, 50, 0, Math.PI * 2, true) // outer circle
+            ctx.moveTo(100, 75)
+
+            ctx.arc(75, 75, 40, 0, Math.PI, false) // Mouth shape
+            ctx.moveTo(65, 65)
+
+            ctx.arc(60, 65, 5, 0, Math.PI * 2, true) // left eype
+            ctx.moveTo(95, 95)
+
+            ctx.arc(95, 65, 5, 0, Math.PI * 2, true)// right eye
+            ctx.stroke()
+        }
+
+        drawCanvas()
+    </script>
+</body>
+
+</html>

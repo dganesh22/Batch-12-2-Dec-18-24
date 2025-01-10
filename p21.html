@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Select dropdown</h1>
+    <form action="">
+        <div>
+            <label for="tech">Your technology</label>
+            <select name="tech" id="tech">
+                <option value="null">Choose technology</option>
+                <option value="html">HTML</option>
+                <option value="css">Css</option>
+                <option value="js">JavaScript</option>
+                <option value="react">ReactJS</option>
+            </select>
+        </div>
+        <hr>
+
+        <div>
+            <label for="tech">Your technology</label>
+            <select name="tech" id="tech" multiple>
+                <option value="html">HTML</option>
+                <option value="css">Css</option>
+                <option value="js">JavaScript</option>
+                <option value="react">ReactJS</option>
+            </select>
+        </div>
+
+        <hr>
+
+
+        <div>
+            <label for="tech">Your technology</label>
+            <select name="tech" id="tech">
+                <option value="null">Choose technology</option>
+                <optgroup label="Frontend Technologies">
+                    <option value="html">HTML</option>
+                    <option value="css">Css</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">ReactJS</option>
+                </optgroup>
+                <optgroup label="Backend Technologies">
+                    <option value="java">Java</option>
+                    <option value="php">Php</option>
+                    <option value="python">Python</option>
+                    <option value="mern">MERN Stack</option>
+                </optgroup>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>

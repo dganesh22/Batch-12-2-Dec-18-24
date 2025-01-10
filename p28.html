@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Dialog Tag</h1>
+
+    <button id="shBtn">Show Dialog</button>
+
+    <dialog id="alDlg">
+        <button id="clBtn">Close</button>
+        <div>
+            <h1>Are You sure to logout</h1>
+            <div>
+                <button>No</button>
+                <button>Yes</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        let shBtn = document.getElementById("shBtn")
+        let clBtn = document.getElementById("clBtn")
+        let dlgEl = document.getElementById("alDlg")
+
+        shBtn.addEventListener("click", function () {
+            dlgEl.show()
+        });
+
+        clBtn.addEventListener("click", function () {
+            dlgEl.close()
+        })
+    </script>
+</body>
+
+</html>

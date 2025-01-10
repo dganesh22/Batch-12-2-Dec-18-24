@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Tags (elements)</h1>
+
+    <form action="" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Login form</legend>
+
+            <div>
+                <label for="user">User Name</label>
+                <input type="text" name="user" id="user" value="test123" required>
+            </div>
+
+            <div>
+                <label for="pass">Your Password</label>
+                <input type="password" name="pass" id="pass" placeholder="min 2 and max 8 characters" minlength="2"
+                    maxlength="8" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- 
+        form elements -> used to collect the input from the user
+            fieldset, legend 
+            input,
+            label
+            textarea
+            select
+
+        action -> server url or server file name
+        method -> decides the data 
+            get = it will display the data in url bar (query) url?key1=value1&key2=value2&key3=value3
+            post = will hide the data
+        autocomplete
+            on =  form input start reading the browser cache memory
+            off = it won't read any browser cache
+        enctype
+            it decides the input encryption format
+        application/x-www-url-encoded => default encryption format except file input
+        multipart/form-data => only for file input
+            
+        Input Attributes
+            type = decides the type of input 
+            name = field name (unique)
+            value = default value
+            required = mandatory fill the data
+            id = optional (target selector)
+            placeholder = hint for user 
+            minlength and maxlength = string length
+            min and max = number
+    -->
+</body>
+
+</html>
