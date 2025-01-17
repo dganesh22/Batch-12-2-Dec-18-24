@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            margin: 40px;
+            padding: 20px;
+            border: 2px solid orange;
+        }
+
+        .b1 {
+            writing-mode: vertical-rl;
+            /* vertical-lr,vertial-rl */
+            text-orientation: mixed;
+        }
+
+        .b2 {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .b3 {
+            writing-mode: horizontal-tb;
+            text-orientation: sideways-right;
+        }
+
+        .b4 {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text-orientation</h1>
+
+    <div class="b1">
+        Block-1
+    </div>
+
+    <div class="b2">
+        Welcome
+    </div>
+    <div class="b3">
+        Block-1
+    </div>
+
+    <div class="b4">
+        Welcome
+    </div>
+</body>
+
+</html>

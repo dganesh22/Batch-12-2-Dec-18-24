@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            margin: 50px;
+            border: 2px solid orange;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .b1 {
+            text-overflow: clip;
+        }
+
+        .b2 {
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text-overflow</h1>
+
+    <h3>clip</h3>
+    <div class="b1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore ipsam maxime obcaecati asperiores
+        optio, non possimus quasi quod repellat inventore modi. Porro doloribus quis ducimus possimus vitae saepe
+        blanditiis.
+    </div>
+
+    <h3>ellipsis</h3>
+    <div class="b2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed architecto sunt, blanditiis ipsam adipisci
+        laboriosam nihil eos est amet consequatur asperiores atque, cum aspernatur optio soluta nam quisquam modi ea!
+    </div>
+</body>
+
+</html>
